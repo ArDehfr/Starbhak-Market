@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STARBHAK MART</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="website icon" type="png"
+    href="public/market.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="bgg" style="position: fixed; width:100%; z-index:3;">
+            <h1 style="margin-top: 1%; font-family: 'Ephesis', cursive; font-size: 60px; text-shadow: 2px 2px 7px #000000;">Starbhak Mart</h1>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </header>
+    <main>
+        <div class="mainn">
+            <div>
+                <div class="itemList">
+                    <nav class="navbar bg-body-tertiary">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" style="color: rgb(0, 0, 0); font-size: 22px;">Item List</a>
+                          <form class="d-flex" role="search">
+                            <input class="form-control me-2" id="myInput" onkeyup="myFunction()" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-none" type="submit" style="width: 75px;"><img style="width:100%;" src="public/search.png" alt=""></button>
+                            <button class="btn btn-none" type="submit" style="width: 75px;"><img style="width:100%;" src="public/shopping-cart.png" alt=""></button>
+                        </form>
+                        </div>
+                    </nav>
+                </div>
+                <br>
+                <br>  
+    <br>
+
+    <div id="myUL">
+
+    <div class="cardMenu">
+        <img src="https://joyfoodsunshine.com/wp-content/uploads/2022/11/breakfast-egg-sandwich-recipe-9.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm">Egg Sandwich</p>
+          <h5 class="card-title">Rp.<span id="harga">48000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart">cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fjoyfoodsunshine.com%2Fwp-content%2Fuploads%2F2023%2F08%2FBBQ-chicken-pizza-recipe-16z9.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm2">BBQ Chicken Pizza</p>
+          <h5 class="card-title">Rp.<span id="harga2">85000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage2">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart2">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fjoyfoodsunshine.com%2Fwp-content%2Fuploads%2F2023%2F06%2Fbest-hamburger-recipe-16x9-1.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm3">Hamburger</p>
+          <h5 class="card-title">Rp.<span id="harga3">53000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage3">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart3">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fjoyfoodsunshine.com%2Fwp-content%2Fuploads%2F2019%2F02%2Fpizza-casserole-recipe-16x9-1.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm4">Pepperoni Pizza</p>
+          <h5 class="card-title">Rp.<span id="harga4">75000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage4">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart4">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fjoyfoodsunshine.com%2Fwp-content%2Fuploads%2F2023%2F10%2Fbest-grilled-cheese-sandwich-recipe-16x9-1.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm5">Cheese Sandwich</p>
+          <h5 class="card-title">Rp.<span id="harga5">50000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage5">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart5">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fjoyfoodsunshine.com%2Fwp-content%2Fuploads%2F2023%2F01%2Fbest-omelette-recipe-16x9-1.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm6">Omelette</p>
+          <h5 class="card-title">Rp.<span id="harga6">42000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage6">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart6">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2022/03/02/fork-lifting-up-spaghetti.jpg.rend.hgtvcom.1280.1280.suffix/1646241241407.jpeg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm7">Spaghetti</p>
+          <h5 class="card-title">Rp.<span id="harga7">52000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage7">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart7">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fjoyfoodsunshine.com%2Fwp-content%2Fuploads%2F2019%2F07%2Fpesto-pasta-recipe-3.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm8">Pesto Pasta</p>
+          <h5 class="card-title">Rp.<span id="harga8">53000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage8">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart8">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fjoyfoodsunshine.com%2Fwp-content%2Fuploads%2F2017%2F07%2FGluten-Free-Baked-Greek-Yogurt-Macaroni-and-Cheese-cheesy.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm9">Mac And Cheese</p>
+          <h5 class="card-title">Rp.<span id="harga9">47000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage9">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart9">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fjoyfoodsunshine.com%2Fwp-content%2Fuploads%2F2022%2F04%2Fmexian-ground-beef-tacos-recipe-16x9-1.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm10">Ground Beef Taco</p>
+          <h5 class="card-title">Rp.<span id="harga10">45000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage10">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart10">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fjoyfoodsunshine.com%2Fwp-content%2Fuploads%2F2022%2F07%2Fcottage-cheese-pancakes-recipe-16x9-1.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm11">Cheese Pancake</p>
+          <h5 class="card-title">Rp.<span id="harga11">48000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage11">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart11">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fjoyfoodsunshine.com%2Fwp-content%2Fuploads%2F2022%2F06%2Fpanzanella-salad-recipe-16x9-1.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm12">Panzanella Salad</p>
+          <h5 class="card-title">Rp.<span id="harga12">45000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage12">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart12">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fjoyfoodsunshine.com%2Fwp-content%2Fuploads%2F2020%2F05%2Fquinoa-salad-recipe-1.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm13">Quinoa Salad</p>
+          <h5 class="card-title">Rp.<span id="harga13">48000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage13">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart13">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fjoyfoodsunshine.com%2Fwp-content%2Fuploads%2F2023%2F05%2Feasy-potato-salad-recipe-16x9-1.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm14">Potato Salad</p>
+          <h5 class="card-title">Rp.<span id="harga14">52000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage14">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart14">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://www.196flavors.com/wp-content/uploads/2021/05/latte-macchiato-3fp.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm15">Latte Macchiato</p>
+          <h5 class="card-title">Rp.<span id="harga15">32000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage15">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart15">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://esensi.tv/wp-content/uploads/2023/10/Oreo-Milkshake-Square-1.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm16">Choco Milkshake</p>
+          <h5 class="card-title">Rp.<span id="harga16">37000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage16">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart16">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://cdn.loveandlemons.com/wp-content/uploads/2023/06/iced-matcha-latte.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm17">Matcha Latte</p>
+          <h5 class="card-title">Rp.<span id="harga17">27000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage17">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart17">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://www.acouplecooks.com/wp-content/uploads/2022/01/Iced-Americano-008s.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm18">Americano</p>
+          <h5 class="card-title">Rp.<span id="harga18">28000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage18">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart18">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://res.cloudinary.com/grow-me/image/fetch/c_fill,h_300,q_auto,w_300/f_auto,fl_lossy/https%3A%2F%2Fjoyfoodsunshine.com%2Fwp-content%2Fuploads%2F2022%2F08%2Fprotein-smoothie-recipe-16x9-1.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm19">Strawberry Smoothie</p>
+          <h5 class="card-title">Rp.<span id="harga19">30000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage19">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart19">Cart</button>
+        </div>
+      </div>
+
+      <div class="cardMenu">
+        <img src="https://www.unicornsinthekitchen.com/wp-content/uploads/2019/09/How-To-Brew-Persian-Tea-At-Home-SQ.jpg" class="card-img-top" alt="Clickable Image" >
+        <div class="card-body">
+          <p class="card-text" id="infoItm20">Tea</p>
+          <h5 class="card-title">Rp.<span id="harga20">25000</span></h5>
+          <br>
+          <button class="btn btn-success" style="float: left;" id="clickableImage20">Add</button>
+          <button class="btn btn-dark" style="float: right;" id="clickableCart20">Cart</button>
+        </div>
+      </div>
+            </div>
+        </div>
+      </div>
+
+
+
+        <aside>
+            <article class="card">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="border-width: 0px; color: #000000; border-radius: 10px; font-size: 17px; height: 45px; background-color: #8b9eb7; width: 100%" id="dropdownButton">
+                        <a>Select Buy Method</a>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#" onclick="changeText('Dine In')">Dine In</a></li>
+                        <li><a class="dropdown-item" href="#" onclick="changeText('Take Away')">Take Away</a></li>
+                    </ul>
+                </div>
+                <div>
+                <br>
+                <div class="mang">
+                    <img class="itmicn2" src="public/employee.png" alt="">
+                    <p class="itm2" style="color: #000000;">Mang. Ea</p>
+                </div>
+                <br>
+                <div class="card" style="background-color: #8b9eb7; border-color: #192a51; border-width: 5px;">
+                    <div class="card-body">
+                      <div class="card" id="dis1">
+                        <div id="displayInfo"></div>
+                        <div id="displayValue"></div>
+                        <div>Quantity : <span id="quantity">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem1">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis2">
+                        <div id="displayInfo2"></div>
+                        <div id="displayValue2"></div>
+                        <div>Quantity : <span id="quantity2">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem2">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis3">
+                        <div id="displayInfo3"></div>
+                        <div id="displayValue3"></div>
+                        <div>Quantity : <span id="quantity3">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem3">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis4">
+                        <div id="displayInfo4"></div>
+                        <div id="displayValue4"></div>
+                        <div>Quantity : <span id="quantity4">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem4">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis5">
+                        <div id="displayInfo5"></div>
+                        <div id="displayValue5"></div>
+                        <div>Quantity : <span id="quantity5">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem5">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis6">
+                        <div id="displayInfo6"></div>
+                        <div id="displayValue6"></div>
+                        <div>Quantity : <span id="quantity6">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem6">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis7">
+                        <div id="displayInfo7"></div>
+                        <div id="displayValue7"></div>
+                        <div>Quantity : <span id="quantity7">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem7">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis8">
+                        <div id="displayInfo8"></div>
+                        <div id="displayValue8"></div>
+                        <div>Quantity : <span id="quantity8">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem8">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis9">
+                        <div id="displayInfo9"></div>
+                        <div id="displayValue9"></div>
+                        <div>Quantity : <span id="quantity9">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem9">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis10">
+                        <div id="displayInfo10"></div>
+                        <div id="displayValue10"></div>
+                        <div>Quantity : <span id="quantity10">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem10">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis11">
+                        <div id="displayInfo11"></div>
+                        <div id="displayValue11"></div>
+                        <div>Quantity : <span id="quantity11">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem11">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis12">
+                        <div id="displayInfo12"></div>
+                        <div id="displayValue12"></div>
+                        <div>Quantity : <span id="quantity12">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem12">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis13">
+                        <div id="displayInfo13"></div>
+                        <div id="displayValue13"></div>
+                        <div>Quantity : <span id="quantity13">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem13">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis14">
+                        <div id="displayInfo14"></div>
+                        <div id="displayValue14"></div>
+                        <div>Quantity : <span id="quantity14">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem14">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis15">
+                        <div id="displayInfo15"></div>
+                        <div id="displayValue15"></div>
+                        <div>Quantity : <span id="quantity15">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem15">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis16">
+                        <div id="displayInfo16"></div>
+                        <div id="displayValue16"></div>
+                        <div>Quantity : <span id="quantity16">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem16">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis17">
+                        <div id="displayInfo17"></div>
+                        <div id="displayValue17"></div>
+                        <div>Quantity : <span id="quantity17">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem17">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis18">
+                        <div id="displayInfo18"></div>
+                        <div id="displayValue18"></div>
+                        <div>Quantity : <span id="quantity18">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem18">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis19">
+                        <div id="displayInfo19"></div>
+                        <div id="displayValue19"></div>
+                        <div>Quantity : <span id="quantity19">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem19">Remove</button>
+                      </div>
+                        <br class="hidden-br">
+                      <div class="card" id="dis20">
+                        <div id="displayInfo20"></div>
+                        <div id="displayValue20"></div>
+                        <div>Quantity : <span id="quantity20">1</span></div>
+                        <br>
+                        <button class="btn btn-danger" id="rem20">Remove</button>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="cardCart" style="text-align:center; background-color: aliceblue;">
+                    <div class="card-body">
+                        <span>Tax : 10%</span>
+                        <br>
+                        <b>Total Amount : <span id="tax">0</span></b>
+                        <br>
+                        <br>
+                        <button class="btn btn-none" id="exportToTxt" style="color:aliceblue; background-color:#1b457c; width: 100%;"><b>Print Recipt</b></button>
+                        <a id="downloadTxtLink" style="display:none;"></a>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="cardCart" style="text-align: center; background-color: aliceblue;">
+                    <div class="card-body">
+                        <span>Market Cart</span>
+                        <br>
+                        <b>Total Cart : <span id="cartTot">0</span></b>
+                        <br>
+                        <br>
+                        <a href="view/cart.html"><button class="btn btn-none" style="color:aliceblue; background-color:#1b457c; width: 100%;"><b>Open Cart</b></button></a>
+                    </div>
+                  </div>
+                 </div>
+            </article>
+        </aside>
+    </main>
+    <br>
+    <br>
+    <footer>
+        <div class="footerats">
+          <ul>
+            <li class="lili"><a href="https://instagram.com/malik.arhh?igshid=NzZlODBkYWE4Ng==" target="_blank" rel="noopener noreferrer"><img class="footer" src="public/instagram.png" alt=""></a></li>
+            <li class="lili"><a href="https://smktarunabhakti.net" target="_blank" rel="noopener noreferrer"><img class="footer1" src="public/Untitled19_20231115084420.png" alt=""></a></li>
+            <li class="lili"><a href="https://github.com/ArDehfr" target="_blank" rel="noopener noreferrer"><img class="footer" src="public/github.png" alt=""></a></li>
+        </ul>
+        </div>
+        <div class="footerbwh">
+            
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="src/main.js"></script>    
+</body>
+</html>
